@@ -12,8 +12,13 @@ module.exports = {
     extend: {
       colors: {
         primary: "#48484A",
+        secondary: "#00CCCC",
         button1: "#00CCCC",
         button2: "#7ED868",
+        light: "#FAFAFA",
+      },
+      backgroundImage: {
+        "lines-textures": "url('/assets/texture.png')",
       },
     },
   },
