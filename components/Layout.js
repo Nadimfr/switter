@@ -2,13 +2,14 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import C from "../public/assets/c.png";
 import Logo from "../public/assets/logo.png";
+import Button from "./Button";
 
 export default function Layout({ children, home }) {
   return (
     <div>
-      <header className="flex items-center justify-between px-5 bg-white py-3 drop-shadow-md lg:py-3 lg:px-80 ">
+      <header className="flex items-center justify-between px-5 bg-white rounded-b-md py-3 drop-shadow-md lg:py-3 lg:px-80 lg:rounded-b-none">
         <Image src={Logo} width={100} height={85} />
-        <div></div>
+        <Button title="Are you a biller?" />
       </header>
 
       <main>{children}</main>
