@@ -11,20 +11,22 @@ import Currency from "../public/assets/Currency.png";
 import Batch from "../public/assets/Batch.png";
 import Refund from "../public/assets/Refund.png";
 import Payment from "../public/assets/Payment.png";
+import Card from "../components/Card";
+import Title from "../components/Title";
 
 export default function Home() {
   const advantages = [
-    { icon: "", title: "Unlimited bill identification fields" },
-    { icon: "", title: "Bill due-date and expiry date + reminders" },
-    { icon: "", title: "Bill amount in any currency + breakdown" },
-    { icon: "", title: "Unlimited presentment fields" },
-    { icon: "", title: "Manages and record bill status transitions" },
-    { icon: "", title: "Custom bill batches creation" },
-    { icon: "", title: "External payment and refund recording" },
-    { icon: "", title: "Adaptable to any payment methods" },
+    { icon: Infinite, title: "Unlimited bill identification fields" },
+    { icon: Calendar, title: "Bill due-date and expiry date + reminders" },
+    { icon: Currency, title: "Bill amount in any currency + breakdown" },
+    { icon: Fields, title: "Unlimited presentment fields" },
+    { icon: Bill, title: "Manages and record bill status transitions" },
+    { icon: Batch, title: "Custom bill batches creation" },
+    { icon: Refund, title: "External payment and refund recording" },
+    { icon: Payment, title: "Adaptable to any payment methods" },
   ];
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Head>
         <title>Switter</title>
         <link rel="icon" href="/logo.ico" />
@@ -50,6 +52,7 @@ export default function Home() {
             className="ml-20 lg:ml-16 relative bottom-10 lg:bottom-0"
           />
         </div>
+
         <div className="bg-primary h-48 lg:h-96 relative bottom-10 lg:bottom-0 px-5 py-6 flex lg:justify-center lg:px-96 lg:items-center">
           <h1 className="text-secondary font-bold text-6xl lg:text-9xl">"</h1>
           <h1 className="text-center text-lg lg:text-4xl text-white italic">
@@ -60,8 +63,17 @@ export default function Home() {
           <h1 className="text-secondary font-bold text-6xl lg:text-9xl">"</h1>
         </div>
 
-        <div className="bg-light lg:px-80">
-          <h1>lol</h1>
+        <div className="relative bottom-10 px-5 py-6 lg:flex lg:items-start lg:justify-between lg:gap-24 bg-light lg:px-80 lg:py-8">
+          <div className="lg:w-2/6">
+            <Title title="Our key advantages" />
+            <p className="lg:text-xl text-primary mt-4">
+              Our comprehensive “Electronic Bill Payment and Presentment” (EBPP)
+              platform is equipped with bank-grade technologies, interfaces and
+              tools, designed to adapt to multiple financial and business
+              models.
+            </p>
+          </div>
+          <Card data={advantages} />
         </div>
       </Layout>
     </div>

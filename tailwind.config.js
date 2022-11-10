@@ -16,6 +16,7 @@ module.exports = {
         button1: "#00CCCC",
         button2: "#7ED868",
         light: "#FAFAFA",
+        mid: "#EBEBEB",
       },
       backgroundImage: {
         "lines-textures": "url('/assets/texture.png')",
