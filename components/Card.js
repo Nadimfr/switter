@@ -9,7 +9,7 @@ const Card = (props) => {
           key={idx}
           className="bg-white rounded-2xl flex flex-col items-center lg:justify-between justify-center gap-6 px-12 py-2 lg:py-12 lg:gap-3 lg:px-2"
         >
-          <Image src={d.icon} height={60} width={60} />
+          <Image alt="icon" src={d.icon} height={60} width={60} />
           <h2 className="font-bold lg:text-2xl text-sm text-center w-full lg:w-11/12">
             {d.title}
           </h2>
